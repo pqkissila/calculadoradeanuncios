@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Anúncios</title>
+    <script type="text/javascript" src="calculadora.js"></script>
+  </head>
+
+  <body>
+    <h1>Cadastro de anúncios</h1><br/><br/>
+    <a href="Index.html">Retornar</a><br/><br/>
+    <h2>Dados</h2>
+    <label for="">Nome do anúncio</label> <br />
+    <input
+      type="text"
+      name="anuncio"
+      id="anuncio"
+      placeholder="Anúncio"
+    /><br /><br />
+
+    <label for="">Cliente</label> <br />
+    <input type="number" name="cliente" id="cliente" /><br /><br />
+
+    <label for="">Data de Início</label><br />
+    <input type="date" name="dataInicio" id="dataInicio" /><br /><br />
+
+    <label for="">Data de Términio</label><br />
+    <input type="date" name="dataTermino" id="dataTermino" /><br /><br />
+
+    <label>Investimento Por dia</label><br />
+    <input
+      type="number"
+      name="investimento"
+      id="investimento"
+      placeholder="Em Reais"
+      step="100000000000000"
+      min="0"
+      max="1000000"
+    />
+    <br /><br />
+
+    <input type="button" value="Calcular" onclick="calculaInvestimento();" /><br /><br />
+
+    <label>Investimento total</label><br />
+    <input type="number" name="custo" id="custo" readonly="true" /><br /><br />
+
+    <label for="">Quantidade máxima de visualizações</label><br/>
+    <input
+      type="number"
+      name="visualizacao"
+      id="visualizacao"
+      readonly="true"
+    /><br/><br/>
+
+    <label for="">Quantidade máxima de cliques</label><br />
+    <input type="number" name="cliques" id="cliques" readonly="true" /><br/><br/>
+
+    <label for="">Quantidade máxima de compartilhamentos</label><br/>
+    <input
+      type="number"
+      name="compartilhamentos"
+      id="compartilhamentos"
+      readonly="true"
+    />
+  </body>
+</html>
